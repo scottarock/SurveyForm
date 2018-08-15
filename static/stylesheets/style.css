@@ -1,0 +1,47 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Trebuchet MS", Avenir, sans-serif;
+}
+
+div.wrapper {
+  width: 75%;
+  max-width: 500px;
+  margin: 50px auto;
+}
+
+fieldset {
+  padding: 25px;
+}
+
+label {
+  display: inline-block;
+  width: 150px;
+}
+
+input, select {
+  display: inline-block;
+  width: 200px;
+  padding: 2px;
+  font-size: 1em;
+}
+
+textarea {
+  width: 360px;
+  height: 100px;
+  padding: 5px;
+  font-size: 1em;
+}
+
+button {
+  float: right;
+  padding: 4px 8px;
+  font-size: 1em;
+  background-color: gainsboro;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.entry {
+  margin: 15px 0px;
+}
