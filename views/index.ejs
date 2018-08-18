@@ -4,40 +4,41 @@
     <meta charset="utf-8">
     <title>Survey Form</title>
     <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="javascript/survey.js"></script>
   </head>
   <body>
     <div class="wrapper">
       <fieldset>
         <legend>Quick Survey</legend>
-        <form action="/process" method="post">
-          <div class="entry">
-            <label for="name">Your Name:</label>
-            <input type="text" name="name">
-          </div>
-          <div class="entry">
-            <label for="location">Dojo Location:</label>
-            <select name="location">
-              <option value="Seattle">Seattle</option>
-              <option value="Mountain View">Mountain View</option>
-              <option value="Dallas">Dallas</option>
-              <option value="Chicago">Chicago</option>
-            </select>
-          </div>
-          <div class="entry">
-            <label for="language">Favorite Language:</label>
-            <select name="language">
-              <option value="Python">Python</option>
-              <option value="JavaScript">JavaScript</option>
-              <option value="Node">Node</option>
-            </select>
-          </div>
-          <div class="entry">
-            <label for="comments">Comments</label>
-            <br>
-            <textarea name="comments"></textarea>
-          </div>
-          <button>Submit</button>
-        </form>
+        <div class="entry">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name">
+        </div>
+        <div class="entry">
+          <label for="location">Dojo Location:</label>
+          <select id="location">
+            <option value="Seattle">Seattle</option>
+            <option value="Mountain View">Mountain View</option>
+            <option value="Dallas">Dallas</option>
+            <option value="Chicago">Chicago</option>
+          </select>
+        </div>
+        <div class="entry">
+          <label for="language">Favorite Language:</label>
+          <select id="language">
+            <option value="Python">Python</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Node">Node</option>
+          </select>
+        </div>
+        <div class="entry">
+          <label for="comments">Comments</label>
+          <br>
+          <textarea id="comments"></textarea>
+        </div>
+        <button id="submit">Submit</button>
       </fieldset>
     </div>
   </body>
