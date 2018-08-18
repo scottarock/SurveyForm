@@ -42,6 +42,19 @@ button {
   border-radius: 3px;
 }
 
+p {
+  margin: 4px 0px;
+}
+
 .entry {
   margin: 15px 0px;
+}
+
+#results {
+  display: none;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: lightgreen;
+  border: 1px solid black;
+  border-radius: 2px;
 }
